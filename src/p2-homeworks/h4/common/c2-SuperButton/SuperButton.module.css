@@ -1,0 +1,45 @@
+.default {
+position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    /*transition: 0.5s;*/
+    border-color: #3498db;
+
+    background-image: -webkit-linear-gradient(45deg, #3498db 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #3498db 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 500ms ease-in-out;
+    transition: background 200ms ease-in-out;
+
+}
+
+.default:hover {
+    letter-spacing: 0.25em;
+    background-position: 0;
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 10px #3498db;
+}
+
+
+
+.blue {
+    border-color: #3498db;
+    color: #fff;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+
+}
+.blue:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 10px #3498db;
+}
+button{
+    margin: 10px;
+}

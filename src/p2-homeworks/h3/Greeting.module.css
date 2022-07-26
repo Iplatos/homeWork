@@ -1,0 +1,48 @@
+.someClass {
+
+}
+
+.error {
+    border: 5px solid red;
+}
+.correct{
+    border: 5px solid #2596b5;
+}
+.errorMassage{
+    color: black;
+    font-size: 30px;
+}
+.inputButton{
+    margin-top: 100px;
+    text-align: center;
+    color:red
+}
+.totalUsers{
+
+    font-size: 20px;
+    color: #2596b5;
+}
+.buttonHW3{
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    border-color: #3498db;
+
+    background-image: -webkit-linear-gradient(45deg, #3498db 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #3498db 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 500ms ease-in-out;
+    transition: background 200ms ease-in-out;
+
+}
+
+.buttonHW3:hover {
+    letter-spacing: 0.25em;
+    background-position: 0;
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 10px #3498db;
+}
