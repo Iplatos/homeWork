@@ -1,5 +1,5 @@
 .default {
-position: relative;
+    position: relative;
     background: #444;
     color: #fff;
     text-decoration: none;
@@ -26,7 +26,6 @@ position: relative;
 }
 
 
-
 .blue {
     border-color: #3498db;
     color: #fff;
@@ -37,9 +36,11 @@ position: relative;
     transition: all 150ms ease-in-out;
 
 }
+
 .blue:hover {
     box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 10px #3498db;
 }
-button{
+
+button {
     margin: 10px;
 }

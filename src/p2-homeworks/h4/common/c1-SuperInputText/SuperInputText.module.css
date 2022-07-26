@@ -3,7 +3,7 @@
 }
 
 .errorInput {
-color: white;
+    color: white;
     background: #163e5b;
     border-color: #3498db;
     background-image: -webkit-linear-gradient(45deg, #3498db 50%, transparent 50%);
@@ -13,7 +13,8 @@ color: white;
     -webkit-transition: background 500ms ease-in-out;
     transition: background 200ms ease-in-out;
 }
-.errorInput:focus{
+
+.errorInput:focus {
 
     background-position: 0;
     box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 10px #3498db;

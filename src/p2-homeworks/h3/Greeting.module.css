@@ -5,24 +5,29 @@
 .error {
     border: 5px solid red;
 }
-.correct{
+
+.correct {
     border: 5px solid #2596b5;
 }
-.errorMassage{
+
+.errorMassage {
     color: black;
     font-size: 30px;
 }
-.inputButton{
+
+.inputButton {
     margin-top: 100px;
     text-align: center;
-    color:red
+    color: red
 }
-.totalUsers{
+
+.totalUsers {
 
     font-size: 20px;
-    color: #2596b5;
+    color: white;
 }
-.buttonHW3{
+
+.buttonHW3 {
     position: relative;
     background: #444;
     color: #fff;
