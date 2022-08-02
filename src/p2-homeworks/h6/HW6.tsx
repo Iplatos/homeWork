@@ -2,15 +2,23 @@ import React, {useState} from 'react'
 import SuperEditableSpan from './common/c4-SuperEditableSpan/SuperEditableSpan'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {restoreState, saveState} from './localStorage/localStorage'
+import s from './/HW6.module.css' ;
 
 function HW6() {
     const [value, setValue] = useState<string>('')
-
+    console.log(value)
     const save = () => {
         saveState<string>('editable-span-value', value)
     }
     const restore = () => {
-        // setValue()
+        let valueAsString = localStorage.getItem('editable-span-value')
+        if (valueAsString) {
+            let NewValue = JSON.parse(valueAsString)
+            if (NewValue) {
+                restoreState<string>('editable-span-value', NewValue)
+                setValue(NewValue)
+            }
+        }
     }
 
     return (
@@ -19,7 +27,7 @@ function HW6() {
             homeworks 6
 
             {/*should work (должно работать)*/}
-            <div>
+            <div className={s.inputClass}>
                 <SuperEditableSpan
                     value={value}
                     onChangeText={setValue}

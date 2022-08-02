@@ -1,0 +1,26 @@
+
+
+.LinksBar {
+    position: relative;
+    left: -115px;
+    width: 150px;
+    height: 70px;
+    background: #000;
+    margin-top: 5px;
+    transition: left .2s linear;
+    text-align: center;
+
+}
+
+.LinksBar:hover {
+    left: 0px;
+    }
+
+.links{
+    color:white;
+
+}
+.LinksBar li {
+    text-align: left;
+
+}
