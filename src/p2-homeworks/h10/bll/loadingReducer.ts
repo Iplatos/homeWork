@@ -1,14 +1,31 @@
-const initState = {
+import {AppStoreType} from "./store";
 
+export type initStateType = {
+    loading:boolean
 }
 
-export const loadingReducer = (state = initState, action: any): any => { // fix any
+const initState:initStateType = {
+loading:true
+}
+
+type loadingReducertType = ReturnType<typeof loadingAC>
+
+export const loadingReducer = (state:initStateType = initState, action: loadingReducertType) => { // fix any
     switch (action.type) {
-        case '': {
-            return state
+
+        case 'LOADING': {
+
+            return {...state, loading: action.Loading}
         }
+
         default: return state
     }
 }
 
-export const loadingAC = (): any => {} // fix any
+export const loadingAC = (Loading:boolean) => {
+    return {
+        type: "LOADING",
+        Loading
+
+    }as const
+} // fix any

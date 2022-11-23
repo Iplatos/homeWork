@@ -1,0 +1,27 @@
+.loadTitle {
+    width: 27ch;
+    white-space: nowrap;
+    border-right: 4px solid #163e5b;
+    overflow: hidden;
+    animation: flashing-border 2.5s ease 1,
+    text 2.5s ease ;
+}
+
+@keyframes flashing-border {
+    0% {
+        border-color: springgreen;
+    }
+
+    50% {
+        border-color: #163e5b;
+    }
+    100% {
+        border-color: springgreen;
+    }
+}
+
+@keyframes text {
+    from {
+        width: 0;
+    }
+}

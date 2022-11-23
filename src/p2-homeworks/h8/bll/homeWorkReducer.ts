@@ -4,12 +4,12 @@ export const homeWorkReducer = (state: PeopleType[], action: Reducertype): Peopl
     switch (action.type) {
         case 'sort': {
 
-            let stateCopy = [...state].sort((a,b) => {
-                if (a.name>b.name){
+            let stateCopy = [...state].sort((a, b) => {
+                if (a.name > b.name) {
                     return 1
-                } else if (a.name<b.name){
+                } else if (a.name < b.name) {
                     return -1
-                }else {
+                } else {
                     return 0
                 }
             })
@@ -33,7 +33,7 @@ type SortPeopleDownACType = ReturnType<typeof SortPeopleDownAC>
 const SortPeopleDownAC = () => {
     return {
         type: 'sort',
-        payload : "down"
+        payload: "down"
     } as const
 }
 
@@ -47,7 +47,7 @@ export const SortPeopleUpAC = () => {
 type CheckPeopleACType = ReturnType<typeof CheckPeopleAC>
 const CheckPeopleAC = () => {
     return {
-    type: 'check',
+        type: 'check',
         payload: 18
-    }as const
+    } as const
 }

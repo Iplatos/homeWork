@@ -16,7 +16,7 @@ grid-template-columns: 150px 150px;
 
 }
 .affair{
-    background-color: blue;
+    background-color: chartreuse;
 grid-area: affairs;
 }
 
@@ -28,15 +28,19 @@ grid-area: affairs;
 }
 .button{
     margin-left: 60px;
-    height: 20px;
+    height: 30px;
     width: 20px;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 
 }
 .isActive{
     background-color: chartreuse;
 }
 .priorityBTN{
-background-color: green;
+background-color:  #2596b5;
 }
 .buttonWrapper{
     margin: 1px;
