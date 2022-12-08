@@ -4,16 +4,16 @@ import {AppStoreType} from "../h10/bll/store";
 
 
 export type BodyType = {
-success:boolean
+    success: boolean
 }
 
 const instance = axios.create({
-    baseURL:"https://neko-cafe-back.herokuapp.com/auth/test",
+    baseURL: "https://neko-cafe-back.herokuapp.com/auth/test",
 
 })
 export const API = {
-    postSome(body: BodyType){
-        return  instance.post("https://neko-cafe-back.herokuapp.com/auth/test", body  )
+    postSome(body: BodyType) {
+        return instance.post("https://neko-cafe-back.herokuapp.com/auth/test", body)
 
     }
 }
