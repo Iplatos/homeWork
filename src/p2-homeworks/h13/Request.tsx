@@ -29,7 +29,7 @@ export const Request = () => {
     return (
         <>
             <div>{requestText}</div>
-            <button onClick={sendInputStatus}></button>
+            <button onClick={sendInputStatus}>send</button>
             <input checked={inputChange} onChange={oninputChangeHandler} type={"checkbox"}/>
         </>
     )
