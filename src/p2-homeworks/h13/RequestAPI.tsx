@@ -1,6 +1,5 @@
-import axios from "axios";
-import {useSelector} from "react-redux";
-import {AppStoreType} from "../h10/bll/store";
+import axios from "axios"
+
 
 
 export type BodyType = {
